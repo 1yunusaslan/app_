@@ -1,0 +1,120 @@
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+:root{
+    --pd : 50px;
+    --mg : 10px;
+    --white : #ffffff;
+    --blue : #4976db;
+    --gray : rgb(117, 117, 117);
+}
+
+body{
+    font-family: 'Jura';
+    background-color: var(--gray);
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--pd);
+    padding-bottom: var(--pd);
+}
+
+h1,label{
+    color: var(--white)
+}
+
+h5{
+    color: var(--gray);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: large;
+}
+
+.link:hover{
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+
+.link-container{
+    display: flex;
+    gap:12px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.content-main{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.content-main label {
+    margin-top: var(--mg);
+}
+
+.content-main input{
+    margin-top: var(--mg);
+    background: hsla(0,0%,100%,.1);
+    border: 0px;
+    padding: 12px;
+    color: var(--white);
+    width: 100%;
+}
+
+.content-main textarea{
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+    background: hsla(0,0%,100%,.1);
+    border: 0px;
+    margin-top: var(--mg);
+    min-height: 12rem;
+    color: var(--white);
+    padding: var(--mg);
+}
+
+.content-main button {
+    width: 100%;
+    background: hsla(0,0%,100%,.1);
+    border: 0px;
+    margin-top: var(--mg);
+    padding: var(--mg);
+    color: var(--gray);
+}
+
+.video, video:before {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .nav-container{
+       flex-wrap: wrap;
+    }
+    .link-container{
+        flex-wrap: wrap;
+    }
+  }

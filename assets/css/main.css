@@ -1,0 +1,83 @@
+.page-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+:root{
+    --pd : 50px;
+    --white : #ffffff;
+    --blue : #4976db;
+    --gray : rgb(117, 117, 117);
+}
+
+body{
+    font-family: 'Jura';
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--pd);
+    padding-bottom: var(--pd);
+}
+
+img{
+    width:65%;
+}
+
+h1{
+    color: var(--white)
+}
+
+h3,p{
+    color:var(--gray);
+}
+
+.link{
+    text-decoration: none;
+    color: var(--white);
+    font-size: large;
+}
+
+.link:hover{
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+
+.link-container{
+    display: flex;
+    gap:12px;
+}
+
+.content-main{
+    display: flex; 
+    justify-content: center; 
+    flex-direction:column;
+    text-align: right;
+} 
+
+
+
+.video, video:before {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .nav-container {
+       flex-wrap: wrap;
+    }
+    .link-container{
+        flex-wrap: wrap;
+    }
+  }
