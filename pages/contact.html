@@ -36,27 +36,29 @@
                 </div>
             </div>
             <div class="content-main">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <label>Full Name</label>
-                        <input type="text" id="full_name" placeholder="Yunus Emre Aslan">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <label>Full Name</label>
+                            <input type="text" id="full_name" placeholder="Yunus Emre Aslan">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="yunusemreaslan@hotmail.com">
+                        </div>
                     </div>
-                    <div class="col-12 col-md-4">
-                        <label>Email</label>
-                        <input type="text" id="email" placeholder="yunusemreaslan@hotmail.com">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            <label>Message</label>
+                            <textarea id="message" placeholder="Hi!"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-8">
-                        <label>Message</label>
-                        <textarea id="message" placeholder="Hi!"></textarea>
+                    <div class="row">
+                        <div class="col-12 col-md-2">
+                            <button type="submit"> Send Message</button>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-2">
-                        <button> Send Message</button>
-                    </div>
-                </div>
+                </form>    
             </div>
             
         </div>
@@ -81,8 +83,10 @@
         </video>
     </div>
 
+    
     <script src="../assets/libs/jquery/jquery.min.js"></script>
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="../assets/js/contact.js"></script>
     
 </body>
