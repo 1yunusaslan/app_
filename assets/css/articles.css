@@ -24,15 +24,11 @@ body{
     padding-bottom: var(--pd);
 }
 
-img{
-    width:65%;
-}
-
-h1{
+h1,h3,a{
     color: var(--white)
-}
+}   
 
-h3,p{
+p,h6{
     color:var(--gray);
 }
 
@@ -42,7 +38,7 @@ h3,p{
     font-size: large;
 }
 
-.link:hover, select:hover{
+.link:hover, a:hover{
     color: var(--blue);
     border-bottom: 2px solid var(--blue);
 }
@@ -52,24 +48,58 @@ h3,p{
     gap:12px;
 }
 
-.link-container select{
-   background: transparent;
-   border: 0px;
-   color: white;
-   border-radius: 0%;
-}
-
-.link-container select option:nth-child(n){
-    background:black;
-    color: white;
-}
-
-.content-main{
-    display: flex; 
-    justify-content: center; 
-    flex-direction:column;
-    text-align: right;
+.content-make{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 10px;
+    border: 1px solid gray;
+    margin-top: 10px;
 } 
+
+.content-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-left-img {
+    width: 60px;
+}
+
+.content-left-img img {
+    width: 50px;
+}
+
+.content-left-id {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-right-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-right-main-tag a{
+    margin-right: 5px;
+    padding: 5px;
+}
+.content-right-main-tag a:hover{
+    border: 1px solid var(--blue);
+    transition: 1s;
+}
+
+
+
+.content a {
+ text-decoration: none;
+}
+
 
 
 
