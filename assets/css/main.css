@@ -29,7 +29,8 @@ img{
 }
 
 h1{
-    color: var(--white)
+    color: var(--white);
+   
 }
 
 h3,p{
@@ -69,7 +70,14 @@ h3,p{
     justify-content: center; 
     flex-direction:column;
     text-align: right;
-} 
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: var(--pd);
+    padding-bottom: var(--pd);
+}
 
 
 

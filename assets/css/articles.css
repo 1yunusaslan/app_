@@ -55,6 +55,7 @@ p,h6{
     padding: 10px;
     border: 1px solid gray;
     margin-top: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
 } 
 
 .content-left {
